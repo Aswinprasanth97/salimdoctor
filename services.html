@@ -1,163 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suchetha Homeopathic Clinic - Services</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-papM0qssbC5FzQ4zScwY9DRU1o83Nyukj8rJxxWhQbTbLUKbwE1OKVkOB4Ogk+ptUuHZl8sRRB4R8l+I2z92sw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body class="font-sans text-gray-800">
-    <!-- Top Bar -->
-    <div
-      class="bg-violet-300 text-white text-sm flex justify-between items-center px-4 py-2"
-    >
-      <div class="space-x-4">
-        <span>Call: +213 098 08 63 28</span>
-        <span>Drachiri8@gmail.com</span>
-        <span
-          >Suchetha Building, Thykoodam Junction, Thykoodam, Kochi, Vyttila,
-          Ernakulam - 682019 (Near Metro Pillar Number 928)</span
-        >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suchetha Homeopathic Clinic - Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papM0qssbC5FzQ4zScwY9DRU1o83Nyukj8rJxxWhQbTbLUKbwE1OKVkOB4Ogk+ptUuHZl8sRRB4R8l+I2z92sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Top Bar -->
+  <div class="bg-violet-300 text-white text-sm flex justify-between items-center px-4 py-2">
+    <div class="space-x-4">
+      <span>Call: +91 90610 46782
+
+      </span>
+      <span>Drachiri8@gmail.com</span>
+      <span>metropillar no. 928, Thykoodam, Vyttila PO, Kochi- 682019. </span>
+    </div>
+    <div class="space-x-2">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow relative">
+    <div class="flex items-center justify-between px-6 py-4">
+      <h1 class="text-violet-600 font-bold text-lg">Suchetha Homeopathic Clinic</h1>
+      <div class="md:hidden block">
+        <button id="menu-toggle" class="text-violet-600 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
       </div>
-      <div class="space-x-2">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <nav id="nav-menu" class="hidden md:flex space-x-6 text-sm relative items-center">
+        <a href="index.html" class="text-violet-600 hover:underline">Home</a>
+        <a href="services.html" class="text-violet-600 border-b-2 border-violet-600 pb-1">Services</a>
+        <a href="./gallery.html" class="hover:text-violet-600">Gallery</a>
+        <a href="./contact.html" class="hover:text-violet-600">Contact Us</a>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+      <a href="index.html" class="block py-2 text-violet-600">Home</a>
+      <a href="services.html" class="block py-2 text-violet-600">Services</a>
+      <a href="./gallery.html" class="block py-2">Gallery</a>
+      <a href="./contact.html" class="block py-2">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Services Page -->
+  <section class="px-6 py-12 bg-gray-50 space-y-10 hidden">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-violet-700 mb-10">
+        Our Services
+      </h2>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Gastrointestinal Surgery
+        </h3>
+        <p>
+          We specialize in advanced surgical treatments for disorders
+          affecting the stomach, intestines, and digestive tract. Our team
+          ensures minimal invasion and quick recovery.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Surgical Emergencies
+        </h3>
+        <p>
+          We are equipped to handle all types of surgical emergencies
+          promptly. Our goal is to stabilize, diagnose, and treat with utmost
+          urgency and precision.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Laser Hemorrhoid Surgery
+        </h3>
+        <p>
+          Using the latest in laser technology, we offer painless and
+          effective treatment for hemorrhoids, ensuring minimal discomfort and
+          speedy recovery.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Cholecystectomy Surgery
+        </h3>
+        <p>
+          We provide laparoscopic gallbladder removal to relieve gallstones
+          and inflammation, with short hospital stays and fast return to
+          normal activity.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Thyroid Surgery
+        </h3>
+        <p>
+          Our thyroid surgeries are safe and precise, targeting thyroid
+          nodules, goiters, or cancer with utmost care to avoid complications.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Hernia Surgery
+        </h3>
+        <p>
+          We offer expert hernia repair procedures including laparoscopic ands
+          open surgery, focusing on durability and minimal recurrence.
+        </p>
       </div>
     </div>
+  </section>
+  <section class=" w-full flex  items-center justify-center">
+    <div class="max-w-7xl mx-auto grid grid-cols-3 gap-4 w-full m-7 p-7 h-full">
+      <div
+        class="bg-green-900 flex flex-col items-center justify-center border rounded-lg shadow-2xl border-gray-600 p-3 text-center w-full h-full">
+        <p class="font-semibold text-xl text-white my-4">Expert treatment for various diseases
+        </p>
+        <hr class=" w-2/3 px-4">
+        <p class="font-semibold text-white text-xl my-4">For all ages including adults and children
 
-    <!-- Header -->
-    <header class="bg-white shadow relative">
-      <div class="flex items-center justify-between px-6 py-4">
-        <h1 class="text-violet-600 font-bold text-lg">Dr.Achiri</h1>
-        <div class="md:hidden block">
-          <button id="menu-toggle" class="text-violet-600 focus:outline-none">
-            <i class="fas fa-bars text-2xl"></i>
-          </button>
-        </div>
-        <nav
-          id="nav-menu"
-          class="hidden md:flex space-x-6 text-sm relative items-center"
-        >
-          <a href="index.html" class="text-violet-600 hover:underline">Home</a>
-          <a
-            href="services.html"
-            class="text-violet-600 border-b-2 border-violet-600 pb-1"
-            >Services</a
-          >
-          <a href="#" class="hover:text-violet-600">Testimonial</a>
-          <a href="#contact" class="hover:text-violet-600">Contact</a>
-        </nav>
+        </p>
       </div>
-      <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
-        <a href="index.html" class="block py-2 text-violet-600">Home</a>
-        <a href="services.html" class="block py-2 text-violet-600">Services</a>
-        <a href="#" class="block py-2">Testimonial</a>
-        <a href="#contact" class="block py-2">Contact</a>
+      <div
+        class="bg-green-900 flex flex-col items-center justify-center border rounded-lg shadow-2xl border-gray-600 p-3 text-center w-full">
+        <p class="font-semibold text-xl text-white mt-4 mb-2">For Men
+
+        </p>
+        <hr class=" w-2/3 px-4">
+        <p class="font-semibold text-white text-lg my-1">Comprehensive solution for prostate gland inflammation
+        <p class="font-semibold text-white text-lg my-1">Marital problems
+        <p class="font-semibold text-white text-lg my-1">Infertility
+
+
+        </p>
       </div>
-    </header>
+      <div
+        class="bg-green-900 flex flex-col items-center justify-center border rounded-lg shadow-2xl border-gray-600 p-3 text-center w-full">
+        <p class="font-semibold text-xl text-white mt-4 mb-2">For Women
 
-    <!-- Services Page -->
-    <section class="px-6 py-12 bg-gray-50 space-y-10">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-center text-violet-700 mb-10">
-          Our Services
-        </h2>
+        </p>
+        <hr class=" w-2/3 px-4">
+        <p class="font-semibold text-white text-lg my-1">Menstrual Disorders
+        <p class="font-semibold text-white text-lg my-1"> Pregnancy Disturbance
+        <p class="font-semibold text-white text-lg my-1">Friboid
 
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-2xl font-semibold text-violet-700 mb-2">
-            Gastrointestinal Surgery
-          </h3>
-          <p>
-            We specialize in advanced surgical treatments for disorders
-            affecting the stomach, intestines, and digestive tract. Our team
-            ensures minimal invasion and quick recovery.
-          </p>
-        </div>
 
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-2xl font-semibold text-violet-700 mb-2">
-            Surgical Emergencies
-          </h3>
-          <p>
-            We are equipped to handle all types of surgical emergencies
-            promptly. Our goal is to stabilize, diagnose, and treat with utmost
-            urgency and precision.
-          </p>
-        </div>
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Marital Problems
 
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-2xl font-semibold text-violet-700 mb-2">
-            Laser Hemorrhoid Surgery
-          </h3>
-          <p>
-            Using the latest in laser technology, we offer painless and
-            effective treatment for hemorrhoids, ensuring minimal discomfort and
-            speedy recovery.
-          </p>
-        </div>
 
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-2xl font-semibold text-violet-700 mb-2">
-            Cholecystectomy Surgery
-          </h3>
-          <p>
-            We provide laparoscopic gallbladder removal to relieve gallstones
-            and inflammation, with short hospital stays and fast return to
-            normal activity.
-          </p>
-        </div>
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Infertility
 
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-2xl font-semibold text-violet-700 mb-2">
-            Thyroid Surgery
-          </h3>
-          <p>
-            Our thyroid surgeries are safe and precise, targeting thyroid
-            nodules, goiters, or cancer with utmost care to avoid complications.
-          </p>
-        </div>
 
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-2xl font-semibold text-violet-700 mb-2">
-            Hernia Surgery
-          </h3>
-          <p>
-            We offer expert hernia repair procedures including laparoscopic and
-            open surgery, focusing on durability and minimal recurrence.
-          </p>
-        </div>
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Osteoporosis
+
+
+
+        </p>
       </div>
-    </section>
+      <div
+        class="bg-green-900 flex flex-col items-center justify-center border rounded-lg shadow-2xl border-gray-600 p-3 text-center w-full row-span-2">
+        <p class="font-semibold text-xl text-white mt-4 mb-2">Chronic diseases
 
-    <footer class="bg-gray-100 text-center text-sm text-gray-600 px-6 py-4">
-      <p>&copy; 2024. All rights reserved.</p>
-      <div class="flex justify-center space-x-4 mt-2">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
+
+        </p>
+        <hr class=" w-2/3 px-4">
+        <p class="font-semibold text-white text-lg my-1">Asthma allergy
+
+        <p class="font-semibold text-white text-lg my-1">Sinusitis
+
+        <p class="font-semibold text-white text-lg my-1">Migraine
+
+
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Cough
+
+
+
+        </p>
+
+
+
+        <p class="font-semibold   text-white text-lg my-1">Gas
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Ulcer
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Cancer
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Piles
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Backpain
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Spondylosis
+
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Memory loss
+
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Insomnia
+
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Acne
+
+
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Obesity
+
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1 capitalize">thinness
+
+
+        </p>
       </div>
-    </footer>
-    <script>
-      const toggleButton = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
+      <div
+        class="bg-green-900 flex flex-col items-center justify-center border rounded-lg shadow-2xl border-gray-600 p-3 text-center w-full">
+        <p class="font-semibold text-xl text-white mt-4 mb-2">Center for Counselling
 
-      toggleButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
-  </body>
+
+        </p>
+        <hr class=" w-2/3 px-4">
+        <p class="font-semibold text-white text-lg my-1">Exam fear
+        <p class="font-semibold text-white text-lg my-1"> Premature infertility Problems for children
+        <p class="font-semibold text-white text-lg my-1">Adults Family conflict
+
+
+
+        </p>
+
+      </div>
+      <div
+        class="bg-green-900 flex flex-col items-center justify-center border rounded-lg shadow-2xl border-gray-600 p-3 text-center w-full row-span-2">
+        <p class="font-semibold text-xl text-white mt-4 mb-2">Expert solution for mental problems
+
+
+
+        </p>
+        <hr class=" w-2/3 px-4">
+        <p class="font-semibold text-white text-lg my-1">Mental disorders Anxiety
+
+        <p class="font-semibold text-white text-lg my-1"> tension
+
+        <p class="font-semibold text-white text-lg my-1">Alcohol addiction
+
+
+
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Hyperactivity in children
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Depression
+        </p>
+        <p class="font-semibold text-white text-lg my-1">The smell of guilt
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Suicidality
+        </p>
+        <p class=" text-white text-sm my-1">(Treatment without noticing of patient is also available)
+        </p>
+      </div>
+      <div
+        class="bg-green-900 flex flex-col items-center justify-center border rounded-lg shadow-2xl border-gray-600 p-3 text-center w-full">
+        <p class="font-semibold text-xl text-white mt-4 mb-2">Yoga meditation practice
+
+
+
+
+        </p>
+        <hr class=" w-2/3 px-4">
+        <p class="font-semibold text-xl text-white mt-4 mb-2">Auric Field Analysis
+
+
+
+        </p>
+
+
+
+      </div>
+      <div
+        class="bg-green-900 flex flex-col items-center justify-center border rounded-lg shadow-2xl border-gray-600 p-3 text-center w-full col-span-3">
+        <p class="font-semibold text-xl text-white mt-4 mb-2">Free Drug Information
+
+
+
+
+        </p>
+        <p class="font-semibold text-white text-lg my-1">Details about medicine currently consuming
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 text-center text-sm text-gray-600 px-6 py-4 h-full">
+    <p>&copy; 2024. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </footer>
+  <script>
+    const toggleButton = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    toggleButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
 </html>
