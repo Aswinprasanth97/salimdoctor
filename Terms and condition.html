@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suchetha Homeopathic Clinic - Terms and Conditions</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="./build.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-papM0qssbC5FzQ4zScwY9DRU1o83Nyukj8rJxxWhQbTbLUKbwE1OKVkOB4Ogk+ptUuHZl8sRRB4R8l+I2z92sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -136,7 +135,14 @@
             <a href="./Terms and condition.html">Terms & Conditions</a>
         </div>
     </footer>
+    <script>
+        const toggleButton = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
 
+        toggleButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
