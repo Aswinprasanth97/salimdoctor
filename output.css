@@ -722,6 +722,11 @@
       outline-style: none;
     }
   }
+  .sm\:w-2xl {
+    @media (width >= 40rem) {
+      width: var(--container-2xl);
+    }
+  }
   .sm\:w-lg {
     @media (width >= 40rem) {
       width: var(--container-lg);
@@ -745,6 +750,11 @@
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
+    }
+  }
+  .md\:w-2xl {
+    @media (width >= 48rem) {
+      width: var(--container-2xl);
     }
   }
   .md\:grid-cols-2 {
@@ -777,6 +787,11 @@
       width: calc(2/3 * 100%);
     }
   }
+  .lg\:w-2xl {
+    @media (width >= 64rem) {
+      width: var(--container-2xl);
+    }
+  }
   .lg\:w-3xl {
     @media (width >= 64rem) {
       width: var(--container-3xl);
@@ -805,6 +820,11 @@
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
+    }
+  }
+  .xl\:w-3xl {
+    @media (width >= 80rem) {
+      width: var(--container-3xl);
     }
   }
   .xl\:flex-row {
