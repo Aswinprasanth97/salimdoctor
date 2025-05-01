@@ -807,6 +807,11 @@
       text-align: left;
     }
   }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
+    }
+  }
 }
 @property --tw-space-y-reverse {
   syntax: "*";
