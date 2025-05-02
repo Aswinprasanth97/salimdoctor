@@ -1,0 +1,166 @@
+ <section class="px-6 py-20 text-center hidden">
+    <h2 class="text-2xl font-bold">
+      Our <span class="text-violet-600">Main Services</span> Categories
+    </h2>
+    <p class="text-center">All Acute and Chronic diseases are treated effectively</p>
+    <div class="grid  md:grid-cols-3 gap-6 mt-6 max-w-7xl mx-auto">
+      <div class="group ">
+        <div class="h-full bg-white py-6 group-hover:bg-violet-600 hover:text-white p-4 rounded shadow">
+          <h4 class="font-semibold uppercase">Deaddiction</h4>
+          <p class="text-sm text-gray-600 group-hover:text-white">
+            Alcohol & Substance deaddiction including passive <br />
+            (Secretly treating the person).
+          </p>
+        </div>
+      </div>
+      <div class="group h-full">
+        <div class="h-full bg-white group-hover:bg-violet-600 hover:text-white p-4 rounded shadow py-6">
+          <h4 class="font-semibold uppercase">Personality improvement</h4>
+          <p class="text-sm text-gray-600 group-hover:text-white">
+            Help to remove bad behaviors & habits, Anger, Depression,
+            Suspicion, Lack of confidence, Irrational fear, Irresponsibility,
+            Over religiousness etc.
+          </p>
+        </div>
+      </div>
+      <div class="group hidden">
+        <div class="h-full bg-white group-hover:bg-violet-600 hover:text-white p-4 rounded shadow py-6">
+          <h4 class="font-semibold uppercase">Hernia Surgery</h4>
+          <p class="text-sm text-gray-600 group-hover:text-white">
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="h-full bg-white group-hover:bg-violet-600 hover:text-white p-4 rounded shadow py-6">
+          <h4 class="font-semibold uppercase">Children Student Correction</h4>
+          <p class="text-sm text-gray-600 group-hover:text-white">
+            Autism, Hyperactivity, , Temper tantrums, Backwardness in school,
+            Lazines etc
+          </p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="h-full bg-white group-hover:bg-violet-600 hover:text-white p-4 rounded shadow py-6">
+          <h4 class="font-semibold uppercase">Family correction</h4>
+          <p class="text-sm text-gray-600 group-hover:text-white">
+            Family disharmony, Quarrelsome and non coperative spouse,
+            problematic elders.
+          </p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="h-full bg-white group-hover:bg-violet-600 hover:text-white p-4 rounded shadow py-6">
+          <h4 class="font-semibold uppercase">
+            ONLINE CONSULTATION FACILITY AVAILABLE
+          </h4>
+          <p class="text-sm text-gray-600 group-hover:text-white">
+            For those who are for away including Abroad. Medicines or
+            prescriptions would be send as per the need of the patient.
+          </p>
+        </div>
+      </div>
+      <div class="group">
+        <a href="./services.html">
+          <div
+            class="h-full bg-white group-hover:bg-violet-600 flex items-center justify-center hover:text-white p-4 rounded shadow py-6">
+            <h4 class="font-semibold uppercase">
+              More...
+            </h4>
+
+          </div>
+      </div></a>
+    </div>
+  </section>
+
+
+
+
+
+<section class="px-6 py-12 bg-gray-50 space-y-10 hidden">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-violet-700 mb-10">
+        Our Services
+      </h2>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Gastrointestinal Surgery
+        </h3>
+        <p>
+          We specialize in advanced surgical treatments for disorders
+          affecting the stomach, intestines, and digestive tract. Our team
+          ensures minimal invasion and quick recovery.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Surgical Emergencies
+        </h3>
+        <p>
+          We are equipped to handle all types of surgical emergencies
+          promptly. Our goal is to stabilize, diagnose, and treat with utmost
+          urgency and precision.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Laser Hemorrhoid Surgery
+        </h3>
+        <p>
+          Using the latest in laser technology, we offer painless and
+          effective treatment for hemorrhoids, ensuring minimal discomfort and
+          speedy recovery.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Cholecystectomy Surgery
+        </h3>
+        <p>
+          We provide laparoscopic gallbladder removal to relieve gallstones
+          and inflammation, with short hospital stays and fast return to
+          normal activity.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Thyroid Surgery
+        </h3>
+        <p>
+          Our thyroid surgeries are safe and precise, targeting thyroid
+          nodules, goiters, or cancer with utmost care to avoid complications.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-violet-700 mb-2">
+          Hernia Surgery
+        </h3>
+        <p>
+          We offer expert hernia repair procedures including laparoscopic ands
+          open surgery, focusing on durability and minimal recurrence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+   <form class="w-full md:w-1/2 space-y-4 border p-6 rounded hidden" action="mailto:drachiri8@gmail.com"
+        method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Full name" class="w-full border px-3 py-2 rounded" required />
+        <input type="text" name="phone" placeholder="Phone Number" class="w-full border px-3 py-2 rounded" />
+        <input type="email" name="email" placeholder="Email" class="w-full border px-3 py-2 rounded" required />
+        <textarea name="message" placeholder="Message" rows="4" class="w-full border px-3 py-2 rounded"
+          required></textarea>
+        <button type="submit" class="bg-violet-600 text-white px-4 py-2 rounded">
+          Send
+        </button>
+      </form>
