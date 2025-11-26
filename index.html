@@ -19,7 +19,6 @@
     <div class="space-x-4 lg:inline flex flex-col items-center">
       <span>Call: +91 90610 46782</span>
       <span>drmbskumar@gmail.com
-
       </span>
       <span>metropillar no. 928, Thykoodam, Vyttila PO, Kochi- 682019. </span>
     </div>
@@ -60,11 +59,6 @@
   <!-- Hero Section -->
   <section
     class="bg-gradient-to-br  from-violet-100 via-white to-blue-100 px-6 py-16 flex flex-col-reverse lg:flex-row items-center gap-10 relative overflow-hidden">
-    <!-- Optional background image as decorative element -->
-    <!-- <div
-      class="absolute inset-0 h-screen bg-[url('/public/bg-pattern.svg')] bg-no-repeat bg-right-top opacity-10 pointer-events-none">
-    </div> -->
-
     <div class="flex-1 max-w-4xl mx-auto space-y-5 text-gray-800 relative z-10">
       <h2 class="text-2xl font-semibold text-center lg:text-left">Welcome to</h2>
       <h3 class=" text-2xl lg:text-4xl text-center lg:text-left font-bold text-violet-700 !font-cascadia">
@@ -134,6 +128,7 @@
       </div>
     </div>
   </section>
+
   <section class="px-6 py-20 text-center bg-gradient-to-b from-cyan-100 to-zinc-100">
     <h2 class="text-2xl font-bold">
       Our <span class="text-violet-600 transform-3d hover:scale-75 cursor-pointer text-3xl">Main Services</span>
@@ -228,12 +223,87 @@
         <p class="font-semibold text-xl text-white mt-4 mb-2">Auric Field Analysis</p>
       </div>
 
-      <!-- Box 8 (full-width) -->
-
-
     </div>
   </section>
-  <!-- Services Section -->
+
+  <!-- Articles / Newspaper Cuttings Section -->
+  <section class="px-6 py-16 bg-white">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-6">
+        Articles
+      </h2>
+
+      <p class="text-gray-600 max-w-2xl mx-auto mb-10">
+        A showcase of published articles, recognitions and newspaper features about
+        Suchetha Homeopathic Clinic & Counseling Center.
+      </p>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Article Card 1 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="./public/WhatsApp Image 2025-11-19 at 18.17.57_810640d9.jpg" alt="Article 1"
+            class="w-full object-cover article-img cursor-pointer">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Newspaper Feature</h3>
+            <p class="text-sm text-gray-500 mt-2">A detailed article discussing the clinic’s unique
+              homeopathic and counselling approach.
+            </p>
+          </div>
+        </div>
+
+        <!-- Article Card 2 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="./public/newscut1.JPG" alt="Article 2" class="w-full object-cover article-img cursor-pointer">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Malayala Manorama September 29-2025
+              India's biggest selling local daily.</h3>
+            <p class="text-sm text-gray-500 mt-2">Malayala Manorama September 29-2025
+              India's biggest selling local daily.
+
+              The news says
+              Uma Thomas MLA (member of legestive assembly) who fell down from a 15 feet height become very serious went
+              into coma and
+              admitted hospital icu. Dr Salimkumar gave Homoeopathic medicine to apply externally described as sacred
+              water from
+              temple. It saved her life.
+            </p>
+          </div>
+        </div>
+
+        <!-- Article Card 3 -->
+        <div class="hidden bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="./public/article3.webp" alt="Article 3"
+            class="w-full h-56 object-contain bg-bottom article-img cursor-pointer">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Medical Journal Mention</h3>
+            <p class="text-sm text-gray-500 mt-2">Recognized for innovative counselling practices and
+              patient care strategies.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View more (optional) -->
+      <div class="mt-10 hidden">
+        <a href="./gallery.html"
+          class="px-6 py-3 bg-violet-600 text-white rounded-full font-semibold hover:bg-violet-700 transition">
+          View All Articles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Article Images -->
+  <div id="imgModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-[9999] flex-col">
+    <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-4xl select-none">&lsaquo;</button>
+    <img id="modalImage" class="max-w-[90%] max-h-[80%] transition-transform duration-200 rounded-xl">
+    <p id="modalCaption" class="text-white text-lg mt-4 text-center px-6"></p>
+    <button id="next"
+      class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-4xl select-none">&rsaquo;</button>
+  </div>
 
   <!-- Gallerys Section -->
   <section class="bg-gray-100 px-6 py-12 text-center hidden">
@@ -332,13 +402,76 @@
       <a href="./Terms and condition.html">Terms & Conditions</a>
     </div>
   </footer>
-</body>
-<script>
-  const toggleButton = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
 
-  toggleButton.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });</script>
+  <script>
+    const toggleButton = document.getElementById("menu-toggle")
+    const mobileMenu = document.getElementById("mobile-menu")
+
+    toggleButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden")
+    })
+
+    let index = 0, scale = 1
+    const images = [...document.querySelectorAll('.article-img')]
+    const modal = document.getElementById('imgModal')
+    const modalImg = document.getElementById('modalImage')
+    const caption = document.getElementById('modalCaption')
+    const next = document.getElementById('next')
+    const prev = document.getElementById('prev')
+
+    const setModal = () => {
+      modalImg.src = images[index].src
+      caption.textContent = images[index].closest('div').querySelector('h3').textContent.trim()
+      scale = 1
+      modalImg.style.transform = 'scale(1)'
+    }
+
+    const open = i => {
+      index = i
+      setModal()
+      modal.classList.remove('hidden')
+      modal.classList.add('flex')
+    }
+
+    const close = () => {
+      modal.classList.add('hidden')
+      modal.classList.remove('flex')
+    }
+
+    const nav = dir => {
+      index = (index + dir + images.length) % images.length
+      setModal()
+    }
+
+    images.forEach((img, i) => img.onclick = () => open(i))
+    next.onclick = () => nav(1)
+    prev.onclick = () => nav(-1)
+
+    modal.onclick = e => {
+      if (e.target === modal) close()
+    }
+
+    document.onkeydown = e => {
+      if (e.key === 'Escape') close()
+      if (e.key === 'ArrowRight') nav(1)
+      if (e.key === 'ArrowLeft') nav(-1)
+    }
+
+    modalImg.onwheel = e => {
+      e.preventDefault()
+      scale += e.deltaY * -0.001
+      scale = Math.min(Math.max(.5, scale), 4)
+      modalImg.style.transform = `scale(${scale})`
+    }
+
+    let startX = 0
+    modalImg.ontouchstart = e => startX = e.touches[0].clientX
+    modalImg.ontouchend = e => {
+      const diff = e.changedTouches[0].clientX - startX
+      if (diff > 60) nav(-1)
+      if (diff < -60) nav(1)
+    }
+  </script>
+</body>
 
 </html>
